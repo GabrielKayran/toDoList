@@ -1,0 +1,173 @@
+.list {
+  margin-top: -1.5rem;
+}
+
+.tasks {
+  margin-top: 1rem;
+  display: flex;
+  flex: 1;
+  gap: 0.75rem;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem;
+  border-radius: 8px;
+
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+}
+
+.tasks div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tasks label {
+  display: flex;
+  padding: 3;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.tasks label input {
+  display: none;
+}
+
+.checkbox {
+  border-radius: 100%;
+  height: 1.125rem;
+  width: 1.125rem;
+
+  transition: 0.2s all;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkboxUnchecked {
+  border: 2px solid var(--blue-300);
+}
+
+.checkboxUnchecked:hover {
+  background-color: rgba(30, 111, 159, 0.2);
+}
+
+.checkboxChecked {
+  border: 2px solid var(--purple-500);
+  background-color: var(--purple-500);
+}
+
+.checkboxChecked:hover {
+  border: 2px solid var(--purple);
+  background-color: var(--purple);
+}
+
+.paragraph {
+  font-size: 0.875rem;
+  line-height: 140%;
+  user-select: none;
+  color: var(--white);
+
+  transition: 0.2s all;
+}
+
+.removeButton:hover svg {
+  fill: var(--red-500);
+  transition: 0.1s all;
+}
+
+.tasks button {
+  border: none;
+  background-color: transparent;
+  border-radius: 4px;
+
+  padding: 5px 4px 2px 4px;
+
+  transition: 0.2s background-color;
+}
+
+.tasks button line,
+.tasks button path {
+  transition: 0.2s fill;
+}
+
+.tasks button:hover {
+  background-color: var(--gray-400);
+}
+
+.tasks button:hover line,
+.tasks button:hover path {
+  fill: var(--danger);
+}
+
+.paragraphChecked {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.empty {
+  margin-top: 1rem;
+  padding: 4rem 1rem;
+
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  color: var(--gray-300);
+}
+
+.empty p {
+  display: flex;
+  flex-direction: column;
+}
+
+.empty img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.list header {
+  margin-top: 4rem;
+  display: flex;
+  flex: 1;
+  width: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list header aside {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-weight: bold;
+}
+
+.list header aside:first-child {
+  color: var(--blue-300);
+}
+
+.list header aside:last-child {
+  color: var(--purple-300);
+}
+
+.list header aside p {
+  font-size: 0.875rem;
+}
+
+.list header aside span {
+  padding: 2px 8px;
+  border-radius: 16px;
+
+  font-size: 0.75rem;
+
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+}

@@ -1,0 +1,56 @@
+.createBar {
+  display: flex;
+  width: 46rem;
+}
+
+.createBar input {
+  margin-right: 0.5rem;
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+
+  background-color: var(--gray-500);
+  color: var(--gray-100);
+
+  height: 3.375rem;
+  padding: 1rem;
+  width: 100%;
+
+  line-height: 140%;
+}
+
+.createBar input::placeholder {
+  color: var(--gray-300);
+}
+
+.createBar input:focus {
+  outline: none;
+  border-color: var(--purple-500);
+}
+
+.createBar button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 3.25rem;
+  padding: 1rem;
+
+  cursor: pointer;
+
+  background-color: var(--blue-500);
+  color: var(--gray-100);
+
+  border: 0;
+  border-radius: 8px;
+  gap: 0.5rem;
+  box-shadow: none;
+
+  font-weight: bold;
+  font-size: 0.875rem;
+
+  transition: 0.2s;
+}
+
+.createBar button:hover {
+  background-color: var(--blue-300);
+}
